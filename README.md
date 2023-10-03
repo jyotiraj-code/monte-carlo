@@ -14,4 +14,17 @@ This is the following method by which the Monte-Carlo method works:
 
 - Aggregation: The results from all the samples are aggregated or averaged to produce an approximate solution or an estimation of the desired outcome. The law of large numbers ensures that as the number of samples increases, the estimate becomes more accurate.
 
-## Approximating the value of $ \pi $
+## Approximating the value of Pi:
+
+The methodology: 
+
+- The program begins by defining a function called estimate_pi(N), where N represents the number of random points or "shots" to be generated.
+
+- Inside the estimate_pi function:
+
+- - A counter, 'm', is initialized to keep track of the number of points falling inside the unit quarter circle.
+- - A loop runs N times, generating pairs of random numbers, 'x' and 'y,' both ranging from 0 to 1.
+
+- - The program checks if each point (x, y) falls within the unit quarter circle using the equation x^2 + y^2 <= 1. If it does, 'm' is incremented.
+
+- The estimated value of π is then calculated using the formula: π ≈ 4 * (m / N).
