@@ -28,3 +28,5 @@ The methodology:
   - The program checks if each point (x, y) falls within the unit quarter circle using the equation x^2 + y^2 <= 1. If it does, 'm' is incremented.
 
 - The estimated value of π is then calculated using the formula: π ≈ 4 * (m / N).
+
+![result output](result_1.png)

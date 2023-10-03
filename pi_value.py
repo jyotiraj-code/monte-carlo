@@ -24,6 +24,6 @@ N = 1000000
 
 # Estimate pi and print the result
 pi_approximation = estimate_pi(N)
-print(f"Approximated Pi: {pi_approximation}")
+print(f"Approximated Pi: {pi_approximation} for N value of {N}")
 print(f"The relative error percentage: {(pi_approximation - np.pi)*100 / np.pi}")
 
