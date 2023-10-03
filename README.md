@@ -37,25 +37,32 @@ The methodology:
 
 - Importing Dependencies:
 
- - The code begins by importing the necessary Python libraries, namely NumPy for mathematical operations and random for random number generation.
+  - The code begins by importing the necessary Python libraries, namely NumPy for mathematical operations and random for random number generation.
 
 - Estimating the Ellipse Area:
 
- - The estimate_ellipse_area function is defined to perform the area estimation. It takes four input parameters: num_measurements, num_trials, semi_major_axis, and semi_minor_axis.
- - A counter points_inside_ellipse is initialized to keep track of the number of random points that fall inside the ellipse.
- - The code uses nested loops to generate random (x, y) points within the bounding box of the ellipse, which is defined by the semi-major and semi-minor axes.
- - The points are checked against the equation of the ellipse to determine if they fall inside it.
- - The estimated area of the ellipse is calculated based on the ratio of points inside the ellipse to the total number of points generated.
+  - The estimate_ellipse_area function is defined to perform the area estimation. It takes four input parameters: num_measurements, num_trials, semi_major_axis, and semi_minor_axis.
+
+  - A counter points_inside_ellipse is initialized to keep track of the number of random points that fall inside the ellipse.
+
+  - The code uses nested loops to generate random (x, y) points within the bounding box of the ellipse, which is defined by the semi-major and semi-minor axes.
+
+  - The points are checked against the equation of the ellipse to determine if they fall inside it.
+ 
+  - The estimated area of the ellipse is calculated based on the ratio of points inside the ellipse to the total number of points generated.
 
 - Input Parameters and Execution:
 
- - The code specifies input parameters such as the number of measurements per trial (num_measurements), the number of trials (num_trials), the semi-major axis (semi_major_axis), and the semi-minor axis (semi_minor_axis) of the ellipse.
+  - The code specifies input parameters such as the number of measurements per trial (num_measurements), the number of trials (num_trials), the semi-major axis (semi_major_axis), and the semi-minor axis (semi_minor_axis) of the ellipse.
 
 - True Area and Error Calculation:
 
- - The code calculates the true area of the ellipse using the formula for the area of an ellipse.
- - It then computes the relative error percentage by comparing the estimated area to the true area.
+  - The code calculates the true area of the ellipse using the formula for the area of an ellipse.
+
+  - It then computes the relative error percentage by comparing the estimated area to the true area.
 
 - Output:
 
 Finally, the code prints the estimated area of the ellipse, the true area, and the relative error percentage to assess the accuracy of the Monte Carlo estimation.
+
+![result of area approximation](result_2.png)
