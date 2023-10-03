@@ -22,9 +22,9 @@ The methodology:
 
 - Inside the estimate_pi function:
 
-- - A counter, 'm', is initialized to keep track of the number of points falling inside the unit quarter circle.
-- - A loop runs N times, generating pairs of random numbers, 'x' and 'y,' both ranging from 0 to 1.
+  - A counter, 'm', is initialized to keep track of the number of points falling inside the unit quarter circle.
+  - A loop runs N times, generating pairs of random numbers, 'x' and 'y,' both ranging from 0 to 1.
 
-- - The program checks if each point (x, y) falls within the unit quarter circle using the equation x^2 + y^2 <= 1. If it does, 'm' is incremented.
+  - The program checks if each point (x, y) falls within the unit quarter circle using the equation x^2 + y^2 <= 1. If it does, 'm' is incremented.
 
 - The estimated value of π is then calculated using the formula: π ≈ 4 * (m / N).
