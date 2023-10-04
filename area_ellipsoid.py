@@ -1,8 +1,10 @@
+#Importing the dependencies
+
 import random
 import numpy as np
 
 def estimate_ellipsoid_volume(M, N, a, b, c):
-    # Initialize variables to keep track of sum and sum of squares
+    #Initializing the values of the sum and sum of squares
     SUM = 0
     SUM2 = 0
 
