@@ -74,27 +74,27 @@ Nuclear decay is a fundamental process in nuclear physics and chemistry, where u
 Methodology:
 
 - Constants: 
- -  We define several constants, including the initial number of parent nuclei (N0), the initial number of daughter nuclei (D0), the probability of decay (p), and the total simulation time (total_time).
+  -  We define several constants, including the initial number of parent nuclei (N0), the initial number of daughter nuclei (D0), the probability of decay (p), and the total simulation time (total_time).
 
 - Data Storage:
- -  We initialize lists, time_points and n_values, to store the simulation data. time_points will track time, and n_values will record the number of undecayed nuclei at each time step.
+  -  We initialize lists, time_points and n_values, to store the simulation data. time_points will track time, and n_values will record the number of undecayed nuclei at each time step.
 
 - Initialization:
- -  We initialize the simulation time t to 0.
+  -  We initialize the simulation time t to 0.
 
 - Main Simulation Loop:
- -  We enter a loop that continues until either all parent nuclei have decayed (N=0) or the total simulation time has been reached. Inside this loop, we perform the following steps:
+  -  We enter a loop that continues until either all parent nuclei have decayed (N=0) or the total simulation time has been reached. Inside this loop, we perform the following steps:
 
-  -   a. We store the current number of undecayed nuclei in NU.
+    -   a. We store the current number of undecayed nuclei in NU.
 
-  -  b. We loop NU times to check each of the remaining nuclei. For each nucleus, we generate a random number x between 0 and 1 using the random.random() function.
+    -  b. We loop NU times to check each of the remaining nuclei. For each nucleus, we generate a random number x between 0 and 1 using the random.random() function.
 
-  -  c. If the generated random number x is greater than 0 and less than or equal to the probability of decay p, we decrease the number of parent nuclei N by one and increase the number of daughter nuclei D by one, simulating a decay event.
+    -  c. If the generated random number x is greater than 0 and less than or equal to the probability of decay p, we decrease the number of parent nuclei N by one and increase the number of daughter nuclei D by one, simulating a decay event.
 
-  -  d. We record the current time t, the updated number of undecayed nuclei N, and repeat the process for the next time step.
+    -  d. We record the current time t, the updated number of undecayed nuclei N, and repeat the process for the next time step.
 
 - Data Visualization:
- -  After the simulation is complete, we use the matplotlib library to create a graph showing the number of undecayed nuclei (n_values) as a function of time (time_points). This visualization provides a clear representation of the nuclear decay process over time.
+  -  After the simulation is complete, we use the matplotlib library to create a graph showing the number of undecayed nuclei (n_values) as a function of time (time_points). This visualization provides a clear representation of the nuclear decay process over time.
 
  Results:
  The resulting graph illustrates the decay of parent nuclei over time, showing a gradual decrease in the number of undecayed nuclei
