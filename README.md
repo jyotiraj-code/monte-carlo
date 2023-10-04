@@ -85,13 +85,13 @@ Methodology:
 - Main Simulation Loop:
   -  We enter a loop that continues until either all parent nuclei have decayed (N=0) or the total simulation time has been reached. Inside this loop, we perform the following steps:
 
-    -   a. We store the current number of undecayed nuclei in NU.
+    -    a. We store the current number of undecayed nuclei in NU.
 
-    -  b. We loop NU times to check each of the remaining nuclei. For each nucleus, we generate a random number x between 0 and 1 using the random.random() function.
+    -    b. We loop NU times to check each of the remaining nuclei. For each nucleus, we generate a random number x between 0 and 1 using the random.random() function.
 
-    -  c. If the generated random number x is greater than 0 and less than or equal to the probability of decay p, we decrease the number of parent nuclei N by one and increase the number of daughter nuclei D by one, simulating a decay event.
+    -    c. If the generated random number x is greater than 0 and less than or equal to the probability of decay p, we decrease the number of parent nuclei N by one and increase the number of daughter nuclei D by one, simulating a decay event.
 
-    -  d. We record the current time t, the updated number of undecayed nuclei N, and repeat the process for the next time step.
+    -    d. We record the current time t, the updated number of undecayed nuclei N, and repeat the process for the next time step.
 
 - Data Visualization:
   -  After the simulation is complete, we use the matplotlib library to create a graph showing the number of undecayed nuclei (n_values) as a function of time (time_points). This visualization provides a clear representation of the nuclear decay process over time.
